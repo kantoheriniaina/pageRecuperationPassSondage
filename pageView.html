@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    window.onload = function () {
+      const hash = window.location.hash;
+      // Rediriger vers l'app mobile avec les paramètres du lien magique
+      const mobileURL = `io.supabase.sondage://reset-password${hash}`;
+      window.location.href = mobileURL;
+    };
+  </script>
+</head>
+<body>
+  <h2>Redirection vers l'application...</h2>
+</body>
+</html>
